@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawly - Профиль пользователя</title>
+    <link rel="stylesheet" href="../styles/style-pf.css">
+</head>
+<body>
+
+    <div class="main-container">
+
+        <header class="header">
+            <div class="logo-container">
+                <img src="../img/logo.svg" alt="Pawly" class="logo-img">
+            </div>
+            <nav class="top-nav">
+                <span class="nav-text">Пользователь</span>
+                <span class="nav-item active">Профиль</span>
+            </nav>
+        </header>
+
+        <a href="mainp.html" class="back-link">
+            <img src="../img/arrow-left.svg" alt="Назад" class="back-arrow-icon">
+            <span>Назад</span>
+        </a>
+
+        <section class="blue-card user-info-section">
+            <div class="avatar-container">
+                <div class="avatar-placeholder">
+                    <img src="../img/profile.png" alt="Аватар Анны" class="avatar-img">
+                </div>
+            </div>
+
+            <div class="user-form">
+                <div class="input-group full-width">
+                    <input type="text" class="input-field" placeholder="Имя пользователя" value="Анна Петрова">
+                </div>
+                <div class="form-row">
+                    <input type="email" class="input-field" placeholder="Почта" value="anna.petrova@mail.ru">
+                    <input type="password" class="input-field" placeholder="Пароль" value="••••••••">
+                </div>
+                <div class="buttons-row">
+                    <button class="btn btn-blue">Изменить данные</button>
+                    <button class="btn btn-red">Удалить пользователя</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blue-card pets-section">
+            <div class="pet-slot add-slot">
+                <div class="add-box">
+                    <img src="../img/plus.svg" alt="Добавить" class="add">
+                </div>
+                <button class="btn-white-pill">Добавить питомца</button>
+            </div>
+
+            <div class="pet-slot">
+                <div class="pet-card">
+                    <img src="../img/cat-5.png" alt="Барсик" class="pet-img">
+                    <div class="pet-overlay">Рыжик</div>
+                </div>
+            </div>
+
+            <div class="pet-slot">
+                <div class="pet-card">
+                    <img src="../img/hamster.png" alt="Хомячок Люся" class="pet-img">
+                    <div class="pet-overlay">Люся</div>
+                </div>
+            </div>
+
+            <div class="pet-slot empty-slot"></div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <img src="../img/google.svg" alt="Google" class="google-icon">
+                </div>
+                <div class="copyright">©Pawly 2025</div>
+            </div>
+        </footer>
+
+    </div>
+</body>
+</html>

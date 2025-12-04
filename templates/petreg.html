@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pawly - Регистрация питомца</title>
+    <link rel="stylesheet" href="../styles/style-petreg.css">
+</head>
+<body>
+    <div class="page-wrapper">
+        
+        <div class="card">
+            <h1>Регистрация вашего питомца</h1>
+
+            <div class="section-title">Выберите вид питомца</div>
+            <div class="subtitle">На данный момент многие виды животных находятся в разработке</div>
+
+            <div class="pet-grid">
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-1.svg" alt="Кот"></div>
+                </label>
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-2.svg" alt="Кролик"></div>
+                </label>
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-3.svg" alt="Змея"></div>
+                </label>
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-4.svg" alt="Грызун"></div>
+                </label>
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-5.svg" alt="Обезьяна"></div>
+                </label>
+                <label class="pet-option">
+                    <input type="radio" name="pet-type">
+                    <div class="pet-card"><img src="../img/icon-6.svg" alt="Собака"></div>
+                </label>
+            </div>
+
+            <div class="section-title">Выберите породу питомца</div>
+            <div class="single-input-container">
+                <input type="text" class="input-field" placeholder="Породы">
+            </div>
+
+            <div class="section-title">Введите данные питомца</div>
+            
+            <div class="data-section">
+                <div class="left-col">
+                    <input type="text" class="input-field" placeholder="Имя">
+                    <input type="text" class="input-field" placeholder="Кличка">
+                    <input type="text" class="input-field" placeholder="Дата рождения">
+                </div>
+                
+                <div class="right-column">
+                    <label class="photo-upload">
+                        <input type="file" style="display: none;">
+                        <span>Фото питомца</span>
+                    </label>
+                </div>
+            </div>
+
+            <a href="recomendations.html" class="btn-submit">Продолжить</a>
+
+        </div>
+
+        <a href="../index.html" class="back-link">
+            <img src="../img/arrow-left.svg" alt="<-"> Назад
+        </a>
+
+    </div>
+</body>
+</html>

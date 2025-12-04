@@ -1,0 +1,393 @@
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('../fonts/PlayfairDisplay.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Philosopher';
+    src: url('../fonts/Philosopher-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #AAD7F3;
+    font-family: 'Philosopher', sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.main-container {
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1200px;
+    padding: 40px 60px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    height: 55px;
+    width: auto;
+}
+
+.top-nav {
+    display: flex;
+    gap: 200px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: #333;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.arrow-icon {
+    height: 24px;
+    width: auto;
+}
+
+.blue-card {
+    background-color: #D6EAF8;
+    border-radius: 15px;
+    padding: 30px;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.profile-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.profile-photo-wrapper {
+    flex-shrink: 0;
+}
+
+.large-photo {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    background-color: #b0bec5;
+    border: 2px solid #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.profile-form {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    width: 100%;
+    background-color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: #555;
+    outline: none;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.form-row .input-field {
+    width: 50%;
+}
+
+.button-row {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 12px 30px;
+    border-radius: 15px;
+    border: none;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+.btn-blue {
+    background-color: #9CCCE8;
+    color: #fff;
+}
+
+.btn-black {
+    background-color: #000;
+    color: #fff;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    height: auto;
+}
+
+.item-photo {
+    aspect-ratio: 1 / 1;
+    border-radius: 15px;
+    border: 4px solid #fff;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.add-item-box {
+    aspect-ratio: 1 / 1;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.plus-sign {
+    font-size: 80px;
+    color: #8FC5E8;
+    font-weight: 300;
+    line-height: 0;
+    margin-top: -10px;
+}
+
+.section-title {
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin: 25px 0 15px;
+    font-weight: normal;
+}
+
+.calendar-section {
+    display: flex;
+    gap: 30px;
+}
+
+.calendar-wrapper {
+    flex: 1;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px 30px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+}
+
+.cal-arrow {
+    color: #8FC5E8;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    row-gap: 15px;
+}
+
+.day-name {
+    font-family: 'Philosopher', sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.day-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.active-day {
+    position: relative;
+    color: #000;
+}
+
+.active-day::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #8FC5E8;
+}
+
+.notes-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.note-input-box {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.note-line {
+    width: 2px;
+    height: 80%;
+    background-color: #8FC5E8;
+}
+
+.note-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.add-note-box {
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+}
+
+.add-note-box img {
+    width: 24px;
+    height: auto;
+
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer-icon {
+    width: 30px;
+    height: auto;
+}
+
+.copyright {
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 770px) {
+    body {
+        padding: 0;
+    }
+
+    .main-container {
+        border-radius: 0;
+        padding: 20px;
+        box-shadow: none;
+    }
+
+    .top-nav {
+        gap: 20px;
+        font-size: 16px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .back-link {
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .button-row {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-row .input-field {
+        width: 100%;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .calendar-section {
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .notes-wrapper {
+        width: 100%;
+    }
+
+    .footer {
+        justify-content: space-between;
+    }
+
+    .input-field {
+        width: 100%;
+    }
+}
