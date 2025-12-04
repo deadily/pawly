@@ -302,25 +302,39 @@ body {
 .add-note-box img {
     width: 24px;
     height: auto;
-
 }
 
 .footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px 0;
+    margin-top: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.footer-icon {
+.footer-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-left {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.footer-left img {
     width: 30px;
     height: auto;
+    display: block;
 }
 
 .copyright {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
-    color: #333;
+    color: #000000;
 }
 
 @media (max-width: 770px) {
@@ -337,7 +351,6 @@ body {
     .top-nav {
         gap: 20px;
         font-size: 16px;
-        flex-direction: column;
         align-items: flex-end;
     }
 
@@ -348,6 +361,7 @@ body {
     }
 
     .profile-section {
+        display: block;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -363,6 +377,7 @@ body {
 
     .form-row {
         flex-direction: column;
+        gap: 15px;
     }
 
     .form-row .input-field {
@@ -385,6 +400,23 @@ body {
 
     .footer {
         justify-content: space-between;
+        position: static;
+        margin-top: 30px;
+    }
+
+    .footer-content {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .footer-left {
+        position: static;
+        transform: none;
+        order: 1;
+    }
+
+    .copyright {
+        order: 2;
     }
 
     .input-field {
