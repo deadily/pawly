@@ -65,19 +65,16 @@ body {
 
 .top-nav {
     display: flex;
-    gap: 275px;
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
-    color: #000;
 }
 
-.top-nav .nav-text,
-.top-nav .nav-item {
-    text-decoration: none;
-    color: #000;
+.nav-text {
+    color: #8CC5EA;
 }
 
 .back-link {
+    max-width: fit-content;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -108,7 +105,6 @@ body {
 }
 
 .avatar-container {
-    width: 250px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -175,7 +171,6 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 16px;
     cursor: pointer;
-    transition: opacity 0.2s;
 }
 
 .btn-blue {
@@ -183,9 +178,17 @@ body {
     color: #fff;
 }
 
+.btn-blue:hover{
+    transform: scale(0.98);
+}
+
 .btn-red {
     background-color: #E89C9C;
     color: #fff;
+}
+
+.btn-red:hover{
+    transform: scale(0.98);
 }
 
 .pets-section {
@@ -219,6 +222,15 @@ body {
     opacity: 0.7;
 }
 
+.add-box:hover {
+    border-color: #8CC5EA;
+    border-width: 10px;
+}
+
+.add:hover {
+    transform: scale(1.2);
+}
+
 .btn-white-pill {
     background-color: #FFFFFF;
     border: none;
@@ -227,7 +239,6 @@ body {
     font-family: 'Playfair Display', serif;
     font-size: 14px;
     color: #555;
-    cursor: pointer;
     text-align: center;
     width: 100%;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
