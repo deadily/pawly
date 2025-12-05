@@ -65,19 +65,16 @@ body {
 
 .top-nav {
     display: flex;
-    gap: 275px;
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
-    color: #000;
 }
 
-.nav-text,
-.nav-item {
-    text-decoration: none;
-    color: #000;
+.nav-text {
+    color: #8CC5EA;
 }
 
 .back-link {
+    max-width: fit-content;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -94,6 +91,10 @@ body {
     width: auto;
 }
 
+.back-link:hover{
+    text-decoration: underline;
+}
+
 .blue-card {
     background-color: #D6EAF8;
     border-radius: 15px;
@@ -108,7 +109,6 @@ body {
 }
 
 .avatar-container {
-    width: 250px;
     flex-shrink: 0;
     display: flex;
     flex-direction: column;
@@ -181,11 +181,25 @@ body {
 .btn-blue {
     background-color: #9CCCE8;
     color: #fff;
+    transition: 0.5s;
+}
+
+.btn-blue:hover{
+    background-color: #74b1d7;
+    transform: scale(0.98);
+    transition: 0.5s;
 }
 
 .btn-red {
     background-color: #E89C9C;
     color: #fff;
+    transition: 0.5s;
+}
+
+.btn-red:hover{
+    background-color: #ea8b8b;
+    transform: scale(0.98);
+    transition: 0.5s;
 }
 
 .pets-section {
@@ -217,6 +231,14 @@ body {
     width: 80px;
     height: 80px;
     opacity: 0.7;
+}
+
+.add-box:hover {
+    border: 2px solid rgba(143, 197, 232, 0.7);
+
+    .add {
+        transform: scale(1.2);
+    }
 }
 
 .btn-white-pill {

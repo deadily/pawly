@@ -67,7 +67,7 @@ header {
     gap: 300px;
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
-    color: #000000;
+    color: #8CC5EA;
 }
 
 .top-nav a {
@@ -76,6 +76,7 @@ header {
 }
 
 .back-link {
+    max-width: fit-content;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -90,6 +91,10 @@ header {
 .back-arrow-icon {
     height: 16px;
     width: auto;
+}
+
+.back-link:hover{
+    text-decoration: underline;
 }
 
 .hero-image-wrapper {

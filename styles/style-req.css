@@ -74,16 +74,10 @@ h1 {
     background-color: #fff;
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
 }
 
-.pack-grid:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-}
-
-.pack-grid:active {
+.pack-grid:hover{
     transform: translateY(-3px);
     box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
@@ -130,24 +124,6 @@ h1 {
     transform: scale(0.98);
 }
 
-.back-link {
-    position: fixed;
-    bottom: 40px;
-    left: 50px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    text-decoration: none;
-    font-family: 'Playfair Display', serif;
-    font-size: 24px;
-    color: #000;
-}
-
-.back-link img {
-    width: 40px;
-    height: auto;
-}
-
 @media (max-width: 770px) {
     body {
         padding: 10px;
@@ -170,14 +146,5 @@ h1 {
     .btn-submit {
         width: 100%;
         font-size: 20px;
-    }
-
-    .back-link {
-        bottom: 20px;
-        left: 20px;
-        font-size: 20px;
-    }
-    .back-link img {
-        width: 30px;
     }
 }

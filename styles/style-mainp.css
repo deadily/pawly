@@ -88,6 +88,10 @@ header {
     text-decoration: none;
 }
 
+.nav-item:hover{
+    text-decoration: underline;
+}
+
 .promo-profile {
     min-height: 700px;
     display: flex;
@@ -215,6 +219,11 @@ header {
     width: 40px;
     cursor: pointer;
     filter: drop-shadow(0 0 5px rgba(255,255,255,0.8));
+}
+
+.arrow-icon:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 .center-card {
@@ -379,6 +388,11 @@ header {
 .arrow-up {
     width: 20px;
     height: auto;
+}
+
+.arrow-up:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
 }
 
 @media (max-width: 900px) {

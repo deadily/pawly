@@ -87,8 +87,12 @@ body {
 }
 
 .back-arrow-icon {
-    height: 24px;
+    height: 16px;
     width: auto;
+}
+
+.back-link:hover{
+    text-decoration: underline;
 }
 
 .blue-card {
@@ -176,19 +180,25 @@ body {
 .btn-blue {
     background-color: #9CCCE8;
     color: #fff;
+    transition: 0.5s;
 }
 
 .btn-blue:hover{
+    background-color: #74b1d7;
     transform: scale(0.98);
+    transition: 0.5s;
 }
 
 .btn-red {
     background-color: #E89C9C;
     color: #fff;
+    transition: 0.5s;
 }
 
 .btn-red:hover{
+    background-color: #ea8b8b;
     transform: scale(0.98);
+    transition: 0.5s;
 }
 
 .pets-section {
@@ -223,12 +233,12 @@ body {
 }
 
 .add-box:hover {
-    border-color: #8CC5EA;
-    border-width: 10px;
-}
+    border: 2px solid rgba(143, 197, 232, 0.7);
 
-.add:hover {
-    transform: scale(1.2);
+    .add {
+        transform: scale(1.2);
+        transition: 0.5s;
+    }
 }
 
 .btn-white-pill {
@@ -272,6 +282,10 @@ body {
     padding: 12px 8px;
     font-family: 'Philosopher', sans-serif;
     font-size: 18px;
+}
+
+.pet-overlay:hover{
+    text-decoration: underline;
 }
 
 .footer {

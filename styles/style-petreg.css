@@ -216,6 +216,10 @@ h1 {
     color: #000;
 }
 
+.back-link:hover{
+    text-decoration: underline;
+}
+
 .back-link img {
     width: 40px;
     height: auto;
