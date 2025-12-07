@@ -17,7 +17,6 @@
     margin: 0;
     padding: 0;
 }
-
 body {
     font-family: 'Philosopher', sans-serif;
     background-color: #AAD7F3;
@@ -102,7 +101,7 @@ h1 {
     width: 60%;
     height: 60%;
     object-fit: contain;
-    opacity: 0.5; 
+    opacity: 0.5;
     transition: all 0.3s ease;
 }
 
@@ -112,13 +111,13 @@ h1 {
 }
 
 .pet-option input:checked + .pet-card {
-    border-color: #AAD7F3; 
+    border-color: #AAD7F3;
     box-shadow: inset 0 0 15px rgba(170, 215, 243, 0.2);
 }
 
 .pet-option input:checked + .pet-card img {
-    opacity: 1; 
-    filter: brightness(0.9); 
+    opacity: 1;
+    filter: brightness(0.9);
 }
 
 .single-input-container {
@@ -157,7 +156,7 @@ h1 {
     justify-content: space-between;
 }
 
-.right-col {
+.right-column {
     width: 40%;
 }
 
@@ -249,11 +248,11 @@ h1 {
     }
 
     .left-col, 
-    .right-col {
+    .right-column {
         width: 100%;
     }
-    
-    .right-col {
+
+    .right-column {
         aspect-ratio: 16 / 9;
     }
 
