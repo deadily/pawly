@@ -235,7 +235,7 @@ header {
     color: #000000;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }

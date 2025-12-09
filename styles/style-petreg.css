@@ -224,7 +224,7 @@ h1 {
     height: auto;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }

@@ -190,6 +190,7 @@ header {
 
 .article-header h2 {
     grid-column: 1 / -1;
+    font-family: 'Playfair Display', serif;
     font-size: 56px;
     font-weight: 400;
     color: #111;
@@ -410,7 +411,7 @@ header {
         width: 100%;
         max-width: 100%;
         margin: 0;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .layout-wrapper {
@@ -597,7 +598,7 @@ header {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .grid-wrapper {
         width: 100%;
         display: block;

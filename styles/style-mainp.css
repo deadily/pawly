@@ -395,14 +395,13 @@ header {
 }
 
 @media (max-width: 900px) {
-    .grid-wrapper,
-    .he-content-grid {
+    .grid-wrapper{
         display: flex;
         flex-direction: column;
         width: 100%;
         max-width: 100%;
         margin: 0;
-        padding: 0 20px;
+        padding: 0 10px;
     }
 
     .layout-wrapper {
@@ -578,7 +577,7 @@ header {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .grid-wrapper {
         width: 100%;
         display: block;

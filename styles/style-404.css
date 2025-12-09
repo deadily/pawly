@@ -199,7 +199,7 @@ header {
     color: #000000;
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     .logo-container img {
         height: 35px;
     }

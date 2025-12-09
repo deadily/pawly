@@ -125,7 +125,7 @@ h1 {
     transform: scale(0.98);
 }
 
-@media (max-width: 770px) {
+@media (max-width: 768px) {
     body {
         padding: 10px;
     }
